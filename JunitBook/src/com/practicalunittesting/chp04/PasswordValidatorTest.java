@@ -6,7 +6,8 @@ public class PasswordValidatorTest {
 
 	@Test
 	public void must_check_password_min_size() {
-		PasswordValidator pv = new PasswordValidator();
+		PasswordValidator passWordValidator = new PasswordValidator();
+		passWordValidator.checkPasswordSize("pwd123");
 	}
 
 }
