@@ -9,7 +9,8 @@ public class PasswordValidatorTest {
 	@Test
 	public void must_check_password_min_size() {
 		PasswordValidator passWordValidator = new PasswordValidator();
-		assertTrue(passWordValidator.checkPasswordSize("pwd123"));
+		String message = "Error: Expected is password size valid = true, but it is false ";
+		assertTrue(message, passWordValidator.checkPasswordSize("pwd123"));
 	}
 
 }
